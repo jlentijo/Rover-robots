@@ -6,10 +6,11 @@
     # Install NodeJS from http://nodejs.org/
     
     # Bower is a command line utility. Install it with npm.
-    $ npm install -g bower
-
-    # Install karma command line interface
-    $ npm install -g karma-cli
+    $ npm install -g bower grunt-cli
+    
+    # Install Ruby by downloading from http://rubyinstaller.org/downloads or use Homebrew
+    # Install the compass gem to compile Sass.
+    $ gem install compass
     
     # Install necessary packages to run and build project.
     $ npm install
