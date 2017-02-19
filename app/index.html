@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rovers Robots</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.png">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="roversRobotsApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nasa></nasa>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-component-router/angular_1_router.js"></script>
+    <script src="bower_components/angular-component-router/ng_route_shim.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.module.js"></script>
+    <script src="scripts/ui-home/ui-home.component.js"></script>
+    
+    <script src="scripts/ui-config-robots/ui-config-robots.component.js"></script>
+    <script src="scripts/ui-config-robots/ui-config-robots.controller.js"></script>
+    <script src="scripts/ui-config-robots/ui-config-robots.service.js"></script>
+    
+    <script src="scripts/ui-run-program/ui-run-program.component.js"></script>
+    <script src="scripts/ui-run-program/ui-run-program.controller.js"></script>
+    
+    <script src="scripts/components/plateau-mars/plateau-mars.component.js"></script>
+    <script src="scripts/components/plateau-mars/plateau-mars.controller.js"></script>
+    <script src="scripts/components/plateau-mars/plateau-mars.service.js"></script>
+    
+    <script src="scripts/components/rover-robot/rover-robot.component.js"></script>
+    <script src="scripts/components/rover-robot/rover-robot.controller.js"></script>
+    <script src="scripts/components/rover-robot/rover-robot.service.js"></script>
+    
+    <script src="scripts/models/rovers-model.service.js"></script>
+    <script src="scripts/models/instructions-model.service.js"></script>
+    
+    <script src="scripts/helpers/storage-helper.service.js"></script>
+    <script src="scripts/helpers/instructions-validation.directive.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

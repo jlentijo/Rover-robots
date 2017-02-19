@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Running Program Rovers</h2>
+  
+  <hr class="rover-separator"/>
+  
+  <div class="rover-content" ng-repeat="rover in runCtrl.robots track by rover.id">
+    <div class="pull-left info-rover">
+      <i class="fa fa-android" aria-hidden="true" 
+         ng-class="{'active-rover': rover.active}"></i>
+      <span>{{rover.name}}</span>
+    </div>
+    <div class="pull-left instructions-rover">
+      <span ng-class="{'label-success': instruction.active, 'label-danger': instruction.error}"
+            ng-repeat="instruction in rover.instructions"
+            class="label label-default instruction">{{instruction.value}}</span>
+    </div>
+    <hr class="rover-separator"/>
+  </div>
+  
+  <plateau-mars columns="5" rows="7" rovers="runCtrl.robots"></plateau-mart>
+  
+</div>

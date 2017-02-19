@@ -1,0 +1,116 @@
+$fa-font-path: "../bower_components/font-awesome/fonts";
+
+// bower:scss
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+body {
+  background-color: #f7f7f7;
+}
+
+.vertical-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+input.ng-dirty.ng-invalid {
+  border-color: rgb(169, 68, 66) !important;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 
+    0 0 8px rgba(169, 68, 66, .6) !important;
+    
+  + p.text-danger {
+    margin: 5px 0px 0px 0px;
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+
+home-ui {
+  .robot-icon {
+    font-size: 30vw;
+    margin-bottom: 10px;
+  }
+  
+  .home-container {
+    min-width: 200px;
+    width: 50vw;
+  }
+  
+}
+
+config-robots-ui {
+  table.table {
+    background-color: white;
+  }
+}
+
+run-program-ui {
+  
+  .active-rover {
+    color: red;
+  }
+  
+  .rover-content {
+    display: inline-block;
+    width: 100%;
+    
+    .info-rover {
+      margin-left: 10px;
+      font-size: 18px;
+      line-height: 25px;
+      
+      > i {
+        font-size: 25px;
+      }
+    }
+    
+    .instructions-rover {
+      .instruction {
+        font-size: 14px;
+        margin: 5px 0px 5px 10px;
+        float: left;
+      }
+    }
+    
+  }
+  
+  hr.rover-separator {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0px;
+    border-color: dimgray;
+  }
+  
+  rover-robot {
+    &.rover-in-action {
+      > .rover-outer-content {
+        color: red;
+        position: absolute;
+        opacity: 0;
+        transition: transform 1s, opacity 1s, left 1s, top 1s;
+        
+        .robot-icon {
+          display: block;
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  
+  plateau-mars {
+    display: block;
+    position: relative;
+    
+    table.table {
+      tr > td.fragment {
+        height: 100px;
+        background-color: white;
+        margin-bottom: 100px;
+      }
+    }
+  }
+  
+}
